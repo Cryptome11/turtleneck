@@ -22,7 +22,7 @@
   .mono{font-family:'DM Mono',monospace}
 
   .knit-bg{background-color:var(--cream); background-image: radial-gradient(circle at 20% 30%, rgba(217,154,43,0.08) 0, transparent 40%), radial-gradient(circle at 80% 70%, rgba(177,74,42,0.07) 0, transparent 40%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%23c9b687' stroke-width='1.1' opacity='0.35'><path d='M0 10 Q10 0 20 10 T40 10'/><path d='M0 20 Q10 10 20 20 T40 20'/><path d='M0 30 Q10 20 20 30 T40 30'/><path d='M10 0 Q0 10 10 20 T10 40'/><path d='M20 0 Q10 10 20 20 T20 40'/><path d='M30 0 Q20 10 30 20 T30 40'/></g></svg>"); background-size:auto,auto,40px 40px;}
-  .knit-bg-dark{background-color:var(--cocoa); background-image: radial-gradient(circle at 30% 20%, rgba(217,154,43,0.18) 0, transparent 50%), radial-gradient(circle at 70% 80%, rgba(122,35,48,0.25) 0, transparent 50%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%23634a30' stroke-width='1.3' opacity='0.6'><path d='M0 10 Q10 0 20 10 T40 10'/><path d='M0 20 Q10 10 20 20 T40 20'/><path d='M0 30 Q10 20 20 30 T40 30'/><path d='M10 0 Q0 10 10 20 T10 40'/><path d='M20 0 Q10 10 20 20 T20 40'/><path d='M30 0 Q20 10 30 20 T30 40'/></g></svg>"); background-size:auto,auto,40px 40px;}
+  .knit-bg-dark{background-color:var(--cocoa); background-image: radial-gradient(circle at 30% 20%, rgba(217,154,43,0.18)  0, transparent 50%), radial-gradient(circle at 70% 80%, rgba(122,35,48,0.25) 0, transparent 50%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%23634a30' stroke-width='1.3' opacity='0.6'><path d='M0 10 Q10 0 20 10 T40 10'/><path d='M0 20 Q10 10 20 20 T40 20'/><path d='M0 30 Q10 20 20 30 T40 30'/><path d='M10 0 Q0 10 10 20 T10 40'/><path d='M20 0 Q10 10 20 20 T20 40'/><path d='M30 0 Q20 10 30 20 T30 40'/></g></svg>"); background-size:auto,auto,40px 40px;}
   
   .chunky{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
   .chunky-sm{border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
@@ -55,11 +55,6 @@
     letter-spacing:-0.04em;
     word-break: break-word;
   }
-
-  .meme-card{transition:transform .25s ease, box-shadow .25s ease;overflow:hidden}
-  .meme-card:hover{transform:translate(-4px,-6px) rotate(-0.6deg);box-shadow:14px 14px 0 var(--ink)}
-  .meme-card img{transition:transform .5s ease}
-  .meme-card:hover img{transform:scale(1.05)}
 
   .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--cream);font-weight:600;font-size:13px}
   .step-num{font-family:'Bowlby One',sans-serif; font-size:80px;line-height:1; color:var(--mustard); -webkit-text-stroke:2.5px var(--ink);}
@@ -253,9 +248,9 @@
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- GALLERY (FIXED FULL IMAGE) -->
 <section id="gallery" class="py-20 md:py-28 px-5 relative">
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-5xl mx-auto">
     <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
       <div>
         <span class="pill mb-4 inline-flex">CHAPTER 02 · VISUAL EVIDENCE</span>
@@ -263,31 +258,9 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 auto-rows-[220px]">
-      <div class="meme-card col-span-2 row-span-2 chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/bf5d094b-8c4e-4e89-8e8b-510fa75b90ea.jpg?auth_key=1885984709-a7a9c9a732074536b9495f7c2479766a-0-69420480d2ddfb727bb5ac35929a0b10" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card col-span-2 md:col-span-2 chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/ce1393ac-3714-4a87-b7c8-c81152fbc8c6.png?auth_key=1885984709-9c2a090b57894d9d8c2f6629470f213f-0-2a83c24c730076408d21c179cf43ac22" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/c93b030c-06fe-41cc-8574-61b3e9d1bae3.jpg?auth_key=1885984709-8ee2a705c6764d64b5d44d0926e80f58-0-b1bb610561729b946990d70d9e5d4efa" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card col-span-2 chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/801fb96d-54a8-4cfc-bc88-0365e3dc75a5.jpg?auth_key=1885984709-23e0270000fe45d0912485af1a6036da-0-c4ded28b6bb095f8b8abc201bf4058b8" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card col-span-2 md:col-span-2 chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/579fae02-4f28-4f13-96cc-e4b1f412f298.jpg?auth_key=1885984709-bb791c273a87413eb58274e74eaa06bc-0-206e162ec25e014e69c8e235b335229c" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card col-span-2 chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/8a6e2c3b-5d1f-49b1-921c-d0daaca57b55.jpg?auth_key=1885984709-d893e577b26141b1bd35c1ad71befc5c-0-6a14903ce6b5b4ed640d8e776fd4c3c8" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/6a2c77c6-dca3-4275-bd24-f98b39b65223.jpg?auth_key=1885984709-3aa88eae6a34420ca497ed15562e25e4-0-79f2147cb3073415f1023b668a622ce3" alt="" class="w-full h-full object-cover">
-      </div>
-      <div class="meme-card chunky bg-[var(--cream)] p-2 relative">
-        <img src="https://z-cdn-media.chatglm.cn/files/ae7115ab-32df-4ca0-872d-60f80a694f70.jpg?auth_key=1885984709-7172137998414b1380c0a48be7537d22-0-e45f04c03ba13645be7e3e06353594b0" alt="" class="w-full h-full object-cover">
-      </div>
+    <!-- Displaying the full combined meme image without cropping -->
+    <div class="chunky bg-[var(--cream)] p-3 md:p-5 wiggle">
+      <img src="https://z-cdn-media.chatglm.cn/files/5d18df48-f1fa-4074-9231-c5d3a716d739.png?auth_key=1885990106-4f3540cbe1a342e08e61dfbd52d291e8-0-4ccccbbd6b0db8bc484bf4b9089f5736" alt="Chamath Turtleneck Meme Collection" class="w-full h-auto object-contain">
     </div>
   </div>
 </section>
